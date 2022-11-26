@@ -2,8 +2,8 @@
 
 using namespace sf;
 
-ItemWeapon::ItemWeapon(WeaponType type, Vector2f position){
-    this->hitbox_zhitbox_yRatio = 0.5;
+ItemWeapon::ItemWeapon(WeaponType type, Vector2f position) {
+    this->hitbox_zHitbox_yRatio = 0.5;
 
     weapon_type = type;
     bonus_type = BONUS_WEAPON;
@@ -29,13 +29,13 @@ ItemWeapon::ItemWeapon(WeaponType type, Vector2f position){
     zHitboxes.push_back(zhitbox);
 }
 
-ItemWeapon::~ItemWeapon(){
-    //dtor
+ItemWeapon::~ItemWeapon() {
+    // dtor
 }
 
 WeaponType ItemWeapon::getWeaponType() { return weapon_type; }
 
-void ItemWeapon::setWeaponType(WeaponType type){
+void ItemWeapon::setWeaponType(WeaponType type) {
     weapon_type = type;
 
     texture.loadFromFile(getWeaponPath(type));
