@@ -3,7 +3,7 @@
 using namespace sf;
 
 ItemWeapon::ItemWeapon(WeaponType type, Vector2f position){
-    this->hitbox_zhitboz_yRatio = 0.5;
+    this->hitbox_zhitbox_yRatio = 0.5;
 
     weapon_type = type;
     bonus_type = BONUS_WEAPON;
