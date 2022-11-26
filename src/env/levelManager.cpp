@@ -28,7 +28,7 @@ void LevelManager::update() {
 }
 
 void LevelManager::wait(){
-    timeSync += clock.getElapsedtime().asSecounds();
+    timeSync += clock.getElapsedTime().asSeconds();
     isWaiting = true;
 }
 
