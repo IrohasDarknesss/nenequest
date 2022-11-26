@@ -1,11 +1,12 @@
 #include "flame.hpp"
+
 #include <math.h>
 #include <stdio.h>
 
 using namespace sf;
 
-Flame::Flame(){
-    //ctor
+Flame::Flame() {
+    // ctor
 }
 
 Flame::Flame(Vector2f position, float f, float g_depth, bool straightLine) {
@@ -33,7 +34,6 @@ Flame::Flame(Vector2f position, float f, float g_depth, bool straightLine) {
 
     speed = Vector2f(-2.7, 1);
 }
-
 
 void Flame::update(float elapsedTime) {
     lifespan += elapsedTime;
@@ -74,7 +74,7 @@ void Flame::update(float elapsedTime) {
     }
 }
 
-bool Flame::is_dead() { return is_dead;}
+bool Flame::isDead() { return is_dead; }
 
 Flame::~Flame() {
     // dtor
