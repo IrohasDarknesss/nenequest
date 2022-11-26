@@ -76,6 +76,6 @@ void Flame::update(float elapsedTime) {
 
 bool Flame::is_dead() { return is_dead;}
 
-Flame::~Flame(){
-    //dtor
+Flame::~Flame() {
+    // dtor
 }
